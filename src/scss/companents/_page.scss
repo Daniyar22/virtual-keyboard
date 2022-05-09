@@ -1,0 +1,109 @@
+.headline{
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: $color-primary;
+  letter-spacing: .1rem;
+  margin-bottom: 2.5rem;
+}
+
+.textarea{
+  display: block;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border: .2rem solid $color-primary;
+  width: 100%;
+  height: 18rem;
+  font-size: 1.7rem;
+  resize: none;
+  outline: none;
+  border-radius: .8rem;
+  background-color: $white;
+  margin-bottom: 2rem;
+}
+.keyboard{
+  margin: -.4rem;
+  @media (max-width: 412px) {
+    margin: -.2rem;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.key{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  width: calc(6.66% - .8rem);
+  height: 4rem;
+  margin: .4rem;
+  padding: .4rem;
+  box-sizing: border-box;
+  border: .2rem solid $color-text;
+  background-color: $color-light-s;
+  font-weight: 500;
+  font-size: 1.7rem;
+  box-shadow:   0 4px 18px 3px rgba(0, 0, 0, 0.1), 0 10px 14px 1px rgba(0, 0, 0, 0.12), 0 6px 6px -3px rgba(0, 0, 0, 0.15);
+  transition: color .3s linear, border-color .3s linear, background-color .3s linear, box-shadow .3s linear;
+  border-radius: .6rem;
+  cursor: pointer;
+  user-select: none;
+  @media (max-width: 412px) {
+    width: calc(6.66% - .4rem);
+    margin: .2rem;
+    padding: .2rem;
+  }
+
+  &--dark{
+    background-color: $color-dark-s;
+  }
+  &--primary{
+    border-color: $color-primary-dark;
+    background-color: $color-primary;
+    color: $white;
+  }
+
+  &--md{
+    width: calc(9.99% - .8rem);
+  }
+  &--lg{
+    width: calc(13.32% - .8rem);
+  }
+  &--xl{
+    width: calc(16.65% - .8rem);
+  }
+
+  &--space{
+    flex-grow: 1;
+  }
+  &.active{
+    transition: 0s;
+    color: $color-primary;
+    border-color: $color-primary;
+    background-color: $color-primary-lighter;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  &:hover{
+    color: $color-primary;
+    border-color: $color-primary;
+    background-color: $color-primary-lighter;
+  }
+}
+
+
+.text{
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.mb{
+  &-1{
+    margin-bottom: 1rem;
+  }
+  &-2{
+    margin-bottom: 2rem;
+  }
+}

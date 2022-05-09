@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+img {
+  border-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  font-weight: 400;
+}
+
+a{
+  color: $color-text;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: $color-text;
+  }
+}
+
+i{
+  font-style: normal;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
